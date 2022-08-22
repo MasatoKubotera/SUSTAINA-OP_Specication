@@ -1,0 +1,46 @@
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{CIT Brains\\Robot Specification for RoboCup2022}
+\author{Masato Kubotera}
+
+\institute{Chiba Institute of Technology, 2-17-1 Tsudanuma, Narashino, Chiba, JAPAN
+\email{masatokubotera06@yahoo.co.jp}\\}
+
+\maketitle
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{fig/SUSTAINA-OP 6 bodies.eps}
+  \end{figure}
+
+\begin{table}[]
+  \centering
+  \begin{tabular}{ll}
+    \hline
+    Robot Name          & SUSTAINA-OP\\
+    Height              & 646.61 mm\\
+    Weight              & 5.18 kg\\
+    Walking speed       & 0.4 m/s\\
+    Degrees of freedom  & 19 DoF\\
+    Actuators           & B3M-SC-1170-A (KONDO) x 10 pcs\\
+                        & B3M-SC-1040-A (KONDO) x 9 pcs\\
+    Sensors             & MPU-9250* (TDK InvenSense)\\
+                        & \quad \tiny{* The included Magnetometer is not used}\\
+                        & e-CAM50\_CUNX (e-con Systems)\\
+    Computing unit      & Jetson Xavier NX 16GB (NVIDIA)\\
+                        & EN715 (AVerMedia)\\                        
+    Battery             & HP-G830C2800S3 LiPo 3S 2800mAh (Hyperion)\\
+    \hline
+  \end{tabular}
+\end{table}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\footnote[0]{Open platform for SUSTAINA-OP: \url{https://github.com/citbrains/SUSTAINA-OP}}
+\footnote[0]{Team website: \url{http://www.cit-brains.net}}
+
+\end{document}
